@@ -1,0 +1,23 @@
+Copyright (C) 2017  SEIKO EPSON Corporation
+
+ABSTRACT
+--------
+This is a status monitor program for Epson InkJet Printer Driver.  
+This software provides the following functions .
+
+- Printer Status (Error / Warning)
+- Ink Level
+- Nozzle Check
+- Head Cleaning
+- Printed Paper Counts
+
+
+LICENSING
+---------
+This program is distributed under GNU Lesser General Public License version 2.1. 
+This program uses Qt LGPL version.
+
+INSTALLATION
+---------
+For installation, please refer to below site:
+http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
