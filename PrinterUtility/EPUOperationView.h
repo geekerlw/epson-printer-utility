@@ -1,6 +1,7 @@
 #ifndef EPUOPERATIONVIEW_H
 #define EPUOPERATIONVIEW_H
 
+#include <QObject>
 #include "EPUView.h"
 
 class EPUOperationView : public EPUView

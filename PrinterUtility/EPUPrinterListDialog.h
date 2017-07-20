@@ -1,6 +1,7 @@
 #ifndef EPUPRINTERLISTDIALOG_H
 #define EPUPRINTERLISTDIALOG_H
 
+#include <QObject>
 #include <QApplication>
 #include <unistd.h>
 #include <QListView>

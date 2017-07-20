@@ -1,6 +1,7 @@
 #ifndef EPUVIEW_H
 #define EPUVIEW_H
 
+#include <QObject>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QLabel>
