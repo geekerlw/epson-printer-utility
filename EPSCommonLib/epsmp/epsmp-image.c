@@ -765,7 +765,9 @@ EPS_ERR_CODE epsmpRotateImage (EPS_UINT32 printWidth, EPS_UINT32 printHeight, co
 
 EPS_INT32 epsmpIsImageFile (const char* fileName)
 {
-	char* pExt = strrchr(fileName, '.');
+	char tmp[20];
+	strcpy(tmp, fileName);
+	char* pExt = strrchr(tmp, '.');
 	if(pExt){
 		if( 0 == strcmp(pExt, ".JPG")	||
 			0 == strcmp(pExt, ".JPEG")	||
