@@ -1,6 +1,8 @@
 #ifndef EPUMAINCONTROLLER_H
 #define EPUMAINCONTROLLER_H
 
+#include <QApplication>
+#include <unistd.h>
 #include "EPUMainWindow.h"
 #include "EPUCallbackObject.h"
 #include "EPUMainView.h"

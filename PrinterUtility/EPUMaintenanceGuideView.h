@@ -1,6 +1,7 @@
 #ifndef EPUMAINTENANCEGUIDEVIEW_H
 #define EPUMAINTENANCEGUIDEVIEW_H
 
+#include <QPushButton>
 #include "EPUOperationView.h"
 #include "EPUPrinterController.h"
 

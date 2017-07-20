@@ -1,6 +1,9 @@
 #ifndef EPUVIEW_H
 #define EPUVIEW_H
 
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QLabel>
 #include <QWidget>
 #include "../EPUCommon/EPUCommonDef.h"
 #include "EPUCallbackObject.h"

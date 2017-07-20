@@ -1,7 +1,14 @@
 #ifndef EPUPRINTERLISTDIALOG_H
 #define EPUPRINTERLISTDIALOG_H
 
+#include <QApplication>
+#include <unistd.h>
+#include <QListView>
 #include <QDialog>
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QListView>
+#include <QPushButton>
 #include "../EPUCommon/EPUCommonDef.h"
 #include "EPUPrinter.h"
 #include "../EPUCommon/EThread.h"

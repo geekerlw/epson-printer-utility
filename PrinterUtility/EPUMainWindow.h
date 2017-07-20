@@ -1,6 +1,11 @@
 #ifndef EPUMAINWINDOW_H
 #define EPUMAINWINDOW_H
 
+#include <QDesktopWidget>
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QLabel>
+#include <QGroupBox>
 #include "../EPUCommon/EPUCommonDef.h"
 #include "EPUView.h"
 #include "EPUMaintenanceGuideView.h"

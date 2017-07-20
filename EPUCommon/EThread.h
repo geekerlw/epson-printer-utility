@@ -1,6 +1,7 @@
 #ifndef ETHREAD_H
 #define ETHREAD_H
 
+#include <QObject>
 #include <QThread>
 #include <QMutex>
 #include <QSemaphore>
