@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/LFP2.png</file>
+        <file>Images/AppIcon.png</file>
+        <file>Images/epson.png</file>
+        <file>Images/printer_status.png</file>
+        <file>Images/status_indicator_offline.png</file>
+        <file>Images/status_indicator_online.png</file>
+        <file>Images/STM.png</file>
+        <file>Images/Nozzle.png</file>
+        <file>Images/Gap.png</file>
+        <file>Images/Cleaning.png</file>
+        <file>Images/STM_small.png</file>
+        <file>Images/Nozzle_small.png</file>
+        <file>Images/Gap_small.png</file>
+        <file>Images/Cleaning_small.png</file>
+        <file>Images/Nozzle_small_old.png</file>
+        <file>Images/Cleaning_small_old.png</file>
+        <file>Images/printer_status_warning.png</file>
+        <file>Images/printer_status_error.png</file>
+        <file>Images/Inkout.png</file>
+        <file>Images/Inklow.png</file>
+    </qresource>
+</RCC>
