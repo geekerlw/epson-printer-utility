@@ -49,21 +49,31 @@ sock_open(void)
 	int sockfd, len;
 	int port = DAEMON_PORT;
 	struct sockaddr_in address;
+	WSADATA wsa;
 
 	if (server_sock_fd >= 0)
 		return 0;
+    
+	printf("Initialising Winsock...\n");
+	if (WSAStartup(MAKEWORD(2, 2), &wsa) != 0)
+	{
+		printf("Failed. Error Code : %d", WSAGetLastError());
+		return 1;
+	}
+
+	printf("Initialise success\n.");
 
 	/* socket open */
 	sockfd = socket(AF_INET, SOCK_STREAM, 0);
 	address.sin_family = AF_INET;
-	address.sin_addr.s_addr = htonl(INADDR_ANY);
+	address.sin_addr.s_addr = inet_addr("127.0.0.1");
 	address.sin_port = htons(port);
 	len = sizeof(address);
-	if (connect(sockfd, (struct sockaddr *)&address, len))
-	{
+	if (connect(sockfd, (struct sockaddr *)&address, len)) {
+		int ret = WSAGetLastError();
+		printf("error connect: %d\n", ret);
 		return 0;
 	}
-
 	server_sock_fd = sockfd;
 	return 0;
 }
