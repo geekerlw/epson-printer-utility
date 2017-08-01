@@ -82,107 +82,11 @@
     <ClCompile Include="GeneratedFiles\Release\moc_EPUView.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="EPSCommonLib\EPSCommonLib.cpp">
-      <Filter>Source Files\EPSCommonLib</Filter>
-    </ClCompile>
     <ClCompile Include="EPSCommonLib\EPSCommunicator.cpp">
       <Filter>Source Files\EPSCommonLib</Filter>
     </ClCompile>
     <ClCompile Include="EPSCommonLib\EPSPrinterController.cpp">
       <Filter>Source Files\EPSCommonLib</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\EPSReplyParser.cpp">
-      <Filter>Source Files\EPSCommonLib</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\epsmp\epsmp-bmp.c">
-      <Filter>Source Files\EPSCommonLib\epsmp</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\epsmp\epsmp-file-io.c">
-      <Filter>Source Files\EPSCommonLib\epsmp</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\epsmp\epsmp-image.c">
-      <Filter>Source Files\EPSCommonLib\epsmp</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\epsmp\epsmp-jpg.c">
-      <Filter>Source Files\EPSCommonLib\epsmp</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\epsmp\epsmp-print-io.c">
-      <Filter>Source Files\EPSCommonLib\epsmp</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\epsmp\epsmp-prn-parse.c">
-      <Filter>Source Files\EPSCommonLib\epsmp</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\epsmp\epsmp-rawimg.c">
-      <Filter>Source Files\EPSCommonLib\epsmp</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\epsmp\epsmp-scale.c">
-      <Filter>Source Files\EPSCommonLib\epsmp</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-cbt.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpage.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpage-color.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpage-comp.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpage-mono.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpr-api.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpr-closed.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpr-dbg.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpr-mem.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpr-services.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-layout.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-net-lpr.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-net-raw.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-net-snmp.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-protocol.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-usb.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-wifi.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\escpr-lib\src\err.c">
-      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\epsmp\linux\epsmp-linux-portal-io.c">
-      <Filter>Source Files\EPSCommonLib\epsmp\linux</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\epsmp\linux\linux_cmn.c">
-      <Filter>Source Files\EPSCommonLib\epsmp\linux</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\epsmp\linux\linux_net.c">
-      <Filter>Source Files\EPSCommonLib\epsmp\linux</Filter>
-    </ClCompile>
-    <ClCompile Include="EPSCommonLib\epsmp\linux\XAsyncSocket.cpp">
-      <Filter>Source Files\EPSCommonLib\epsmp\linux</Filter>
     </ClCompile>
     <ClCompile Include="EPUCommon\EThread.cpp">
       <Filter>Source Files\EPUCommon</Filter>
@@ -251,30 +155,6 @@
     <Filter Include="Header Files\PrinterUtility">
       <UniqueIdentifier>{ce6870d7-3dec-4174-a67e-1a68b119b1e8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\EPSCommonLib\epsmp">
-      <UniqueIdentifier>{e58cc311-18e3-4ec9-af8a-932ba6eb134a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\EPSCommonLib\epsmp\linux">
-      <UniqueIdentifier>{05e9c903-1ae3-4a94-9ec2-cf09cab3b08e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\EPSCommonLib\escpr-lib">
-      <UniqueIdentifier>{a45a6f1c-18a7-430b-9a7f-a4620b5d3fc6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\EPSCommonLib\escpr-lib\inc">
-      <UniqueIdentifier>{43cd722c-2754-4135-818d-0b4c43e10762}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\EPSCommonLib\epsmp">
-      <UniqueIdentifier>{256b8167-2aec-422a-a2bc-57166b728543}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\EPSCommonLib\escpr-lib">
-      <UniqueIdentifier>{bbdc6c66-3403-4322-969c-60bdc02364bd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\EPSCommonLib\escpr-lib\src">
-      <UniqueIdentifier>{e80cc5cd-0cfc-4ce1-82aa-ab55e1b44886}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\EPSCommonLib\epsmp\linux">
-      <UniqueIdentifier>{981c9007-9b7a-4e37-8ec1-c14c3049e5c1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Resource Files\PrinterUtility">
       <UniqueIdentifier>{9a8c126e-1506-4326-b602-8352adcfe9bf}</UniqueIdentifier>
     </Filter>
@@ -313,9 +193,6 @@
     <ClInclude Include="PrinterUtility\EPUPrinterController.h">
       <Filter>Header Files\PrinterUtility</Filter>
     </ClInclude>
-    <ClInclude Include="EPSCommonLib\EPSCommonLib.h">
-      <Filter>Header Files\EPSCommonLib</Filter>
-    </ClInclude>
     <ClInclude Include="EPSCommonLib\EPSCommonLibDefine.h">
       <Filter>Header Files\EPSCommonLib</Filter>
     </ClInclude>
@@ -325,122 +202,11 @@
     <ClInclude Include="EPSCommonLib\EPSPrinterController.h">
       <Filter>Header Files\EPSCommonLib</Filter>
     </ClInclude>
-    <ClInclude Include="EPSCommonLib\EPSReplyParser.h">
-      <Filter>Header Files\EPSCommonLib</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\err.h">
-      <Filter>Header Files\EPSCommonLib</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\epsmp\epsmp-bmp.h">
-      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\epsmp\epsmp-file-io.h">
-      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\epsmp\epsmp-image.h">
-      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\epsmp\epsmp-jpg.h">
-      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\epsmp\epsmp-print-io.h">
-      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\epsmp\epsmp-prn-parse.h">
-      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\epsmp\epsmp-rawimg.h">
-      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\epsmp\epsmp-scale.h">
-      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\epsmp\included_headers.h">
-      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\epsmp\linux\epsmp-linux-portal-io.h">
-      <Filter>Header Files\EPSCommonLib\epsmp\linux</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\epsmp\linux\linux_cmn.h">
-      <Filter>Header Files\EPSCommonLib\epsmp\linux</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\epsmp\linux\linux_net.h">
-      <Filter>Header Files\EPSCommonLib\epsmp\linux</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\epsmp\linux\XAsyncSocket.h">
-      <Filter>Header Files\EPSCommonLib\epsmp\linux</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-cbt.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpage.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpage-color.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpage-comp.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpage-mono.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-api.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-closed.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-dbg.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-def.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-err.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-media.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-mem.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-pvt.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-services.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-layout.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-net-lpr.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-net-raw.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-net-snmp.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-protocol.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-typedefs.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-usb.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-wifi.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="EPSCommonLib\escpr-lib\inc\err.h">
-      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
-    </ClInclude>
     <ClInclude Include="EPUCommon\EPUCommonDef.h">
       <Filter>Header Files\EPUCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\EPSCommonType.h">
+      <Filter>Header Files\EPSCommonLib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

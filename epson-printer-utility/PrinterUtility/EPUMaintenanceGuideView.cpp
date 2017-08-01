@@ -48,9 +48,6 @@ void EPUMaintenanceGuideView::SetMaintenanceCommand(EPUMaintenanceCommand comman
         QPixmap pix(":/Images/Nozzle_small_old.png");
         m_pGuideIconView->setPixmap(pix);
         m_pGuideLabel->setText(QLabel::tr("Nozzle Check"));
-//        m_pMaintenanceGuideLabel->setText("To perform a nozzle check, make sure that the printer is on and connected to computer. "\
-                                          "Also make sure that A4 or Letter size plain paper is loaded in the paper cassette. "\
-                                          "Click [Print] to print a nozzle check pattern or click [Cancel] to quit.");
 
         m_pMaintenanceGuideLabel->setText(QLabel::tr("To perform a nozzle check, make sure that the printer is on and connected to the computer."));
     }

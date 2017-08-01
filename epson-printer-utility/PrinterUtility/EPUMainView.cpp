@@ -313,7 +313,7 @@ void EPUMainView::updatePrinterInkInfo()
 				}
 
 		}else{//
-				//Ink Low エラーのチェック
+				//Ink Low
 				QString EndInk[EPS_INK_NUM];
 				int endink_num = 0;
 

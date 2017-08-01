@@ -1,11 +1,6 @@
 #ifndef EPSCOMMUNICATOR_H
 #define EPSCOMMUNICATOR_H
 
-#include "epsmp/linux/epsmp-linux-portal-io.h"
-#include "epsmp/epsmp-file-io.h"
-#include "escpr-lib/inc/epson-escpr-api.h"
-//#include "epson-escpr-def.h"
-
 #include "../EPUCommon/EThread.h"
 #include "EPSCommonLibDefine.h"
 

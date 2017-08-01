@@ -1,6 +1,7 @@
 #include "EPSCommunicator.h"
 #include <QDebug>
 
+#include "EPSCommonLibDefine.h"
 #include "../BackendLib/backend_api.h"
 
 
@@ -478,42 +479,44 @@ bool EPSCommunicator::GetCurrentPrinterStatus(EPS_STATUS* status, EPS_INK_INFO* 
     EPS_ERR_CODE retState = EPS_ERR_NONE;
 	ECB_PRINTER_STS retState_usb = ECB_PRNST_IDLE;
 
-	if(m_currentPrinter.protocol == EPS_PROTOCOL_USB){
- 
-/*     Get Status (from USB Backend)*/
+	if (m_currentPrinter.protocol == EPS_PROTOCOL_USB) {
+
+		/*     Get Status (from USB Backend)*/
 		ECB_STATUS status_usb;
 
-		retState_usb =Get_Status(&status_usb);
+		retState_usb = Get_Status(&status_usb);
 
-		if(retState_usb == ECB_DAEMON_NO_ERROR){
+		if (retState_usb == ECB_DAEMON_NO_ERROR) {
 			status->printerStatus = status_usb.printerStatus;
 
 			status->printerStatus = status_usb.printerStatus;
 			status->errorCode = status_usb.errorCode;
 			status->jobContinue = false;
 
-			inkInfo->number= status_usb.ink_num;
+			inkInfo->number = status_usb.ink_num;
 
 			int i;
-			for(i=0; i < status_usb.ink_num; i++){
-					inkInfo->colors[i]=status_usb.colors[i];
-					inkInfo->remaining[i]=status_usb.inklevel[i];
-					inkInfo->status[i]=EPS_INK_ST_NORMAL; //not used in this STM
+			for (i = 0; i < status_usb.ink_num; i++) {
+				inkInfo->colors[i] = status_usb.colors[i];
+				inkInfo->remaining[i] = status_usb.inklevel[i];
+				inkInfo->status[i] = EPS_INK_ST_NORMAL; //not used in this STM
 			}
 
-			inkInfo->showInkInfo=status_usb.showInkInfo;
-			inkInfo->showInkLow=status_usb.showInkLow;
+			inkInfo->showInkInfo = status_usb.showInkInfo;
+			inkInfo->showInkLow = status_usb.showInkLow;
 
-		    status->paper_count.color = status_usb.paper_count.color;
-		    status->paper_count.monochrome = status_usb.paper_count.monochrome;			
-		    status->paper_count.blank = status_usb.paper_count.blank;		
-		    status->paper_count.adf = status_usb.paper_count.adf;
-		    status->paper_count.color_borderless = status_usb.paper_count.color_borderless;		
-		    status->paper_count.monochrome_borderless = status_usb.paper_count.monochrome_borderless;	
+			status->paper_count.color = status_usb.paper_count.color;
+			status->paper_count.monochrome = status_usb.paper_count.monochrome;
+			status->paper_count.blank = status_usb.paper_count.blank;
+			status->paper_count.adf = status_usb.paper_count.adf;
+			status->paper_count.color_borderless = status_usb.paper_count.color_borderless;
+			status->paper_count.monochrome_borderless = status_usb.paper_count.monochrome_borderless;
 
-			return true;
-		}else{
-			qDebug()<<"can't get current status for usb backend.";
+		}
+		else {
+			qDebug() << "can't get current status for usb backend.";
 			return false;
 		}
+	}
+	return true;
 }
