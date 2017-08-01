@@ -147,7 +147,6 @@
     <ClCompile Include="GeneratedFiles\Release\moc_EThread.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="PrinterUtility\EPUCallbackObject.cpp" />
     <ClCompile Include="PrinterUtility\EPUGlobal.cpp" />
     <ClCompile Include="PrinterUtility\EPUInkLevelView.cpp" />

@@ -1,10 +1,13 @@
 #include "EPSCommunicator.h"
 #include "EPSReplyParser.h"
 #include <QDebug>
+#include <Windows.h>
 #include "epsmp/linux/linux_cmn.h"
 //#include <cups/cups.h>
 
 #include "../BackendLib/backend_api.h"
+
+#pragma comment(lib, "Ws2_32.lib")
 
 EPSCommunicator* EPSCommunicator::pSelf = NULL;
 
@@ -129,7 +132,7 @@ bool EPSCommunicator::InitializeCommunicator()
     externNetFuncPtr.accept			= NULL;
     externNetFuncPtr.getsockname		= NULL;
 #endif
-
+#if 0
     externCmnFuncPtr.version           = EPS_CMNFUNC_VER_CUR;
     externCmnFuncPtr.findCallback		= &FindPrinterCallback;
     externCmnFuncPtr.memAlloc			= &epsmpMemAlloc;
@@ -141,6 +144,7 @@ bool EPSCommunicator::InitializeCommunicator()
     externCmnFuncPtr.unlockSync		= &epsmpUnlockSync;
     externCmnFuncPtr.stateCallback		= NULL;	/* current version unused */
     retStatus = epsInitDriver(stAppSetting.nComMode, &externUsbFuncPtr, &externNetFuncPtr, &externCmnFuncPtr);
+#endif
     if (retStatus != EPS_ERR_NONE){
         //out_printf("ERROR: epsInitDriver returned with error: %d\n", retStatus);
         //goto APP_END;
@@ -509,7 +513,7 @@ bool EPSCommunicator::GetCurrentPrinterStatus(EPS_STATUS* status, EPS_INK_INFO* 
 
 		retState = epsGetStatus(status);
 
-		usleep(1000);   
+		Sleep(1);   
 	
 		if(retState == EPS_ERR_NONE){
 		    retState = epsGetInkInfo(inkInfo);

@@ -3,11 +3,11 @@
 
 #define noErr 0
 #define abortErr -1
-#define ETIMEDOUT -2
-#define errno -3
+//#define ETIMEDOUT -2
+//#define errno -3
 
-#define EINTR 100
-#define ECANCELED 200
+//#define EINTR 100
+//#define ECANCELED 200
 
 
 typedef int OSStatus;

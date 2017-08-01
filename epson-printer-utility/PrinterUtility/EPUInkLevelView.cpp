@@ -70,7 +70,7 @@ void EPUInkLevelView::paintEvent(QPaintEvent *event)
 	QFontMetrics metrics(font);
 	painter.setFont(font);
 
-	if(m_nSmartCharge == TRUE){ //スマートチャージ対応機
+	if(m_nSmartCharge == TRUE){ //
 		if(m_InkEndNum ==0){
 			painter.drawText(50, 30, QLabel::tr("Ink level information not available"));
 		}else{
@@ -84,7 +84,7 @@ void EPUInkLevelView::paintEvent(QPaintEvent *event)
 		int selfHeight = frameSize.height();
 
 
-	//  Inkレベル取得エラーの時、インクエンド時は 3に設定して描画（仕様）
+	//  
 		if(m_nInkLevel <= 3) Draw_Inklevel = 3;
 
 		int w = 30;

@@ -33,7 +33,7 @@
 #include "epson-usb.h"
 #endif
 #ifdef GCOMSW_PRT_USE_NETWORK
-#include "epson-net-snmp.h"
+#include "../inc/epson-net-snmp.h"
 #endif
 #include "../inc/epson-escpr-closed.h"
 

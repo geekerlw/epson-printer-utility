@@ -2,13 +2,18 @@
 
 #include	"XAsyncSocket.h"
 #include	<stdio.h>
-#include	<unistd.h>
-#include	<sys/socket.h>
+//#include	<unistd.h>
+#include	<winsock.h>
+#include	<Windows.h>
+//#include	<sys/socket.h>
 #include	<fcntl.h>
-#include	<netinet/in.h>
-#include	<netdb.h>
-#include	<arpa/inet.h>
-#include	<sys/time.h>
+//#include	<netinet/in.h>
+//#include	<netdb.h>
+//#include	<arpa/inet.h>
+//#include	<sys/time.h>
+#include	<time.h>
+
+#pragma comment(lib, "Ws2_32.lib")
 
 //------------------------------------------------------
 XAsyncSocket::XAsyncSocket()
@@ -36,7 +41,9 @@ OSStatus XAsyncSocket::Open()
 
     InitMember();
 
-    err = socketpair(AF_UNIX, SOCK_STREAM, 0, tempSockPair);
+    //err = socketpair(AF_UNIX, SOCK_STREAM, 0, tempSockPair);
+	/* todo : windows has no socketpair */
+	err = socket(AF_UNIX, SOCK_STREAM, 0);
     if (err == noErr  &&  tempSockPair[0] >= 0  &&  tempSockPair[1] >= 0) {
         mSndCancelSock = tempSockPair[0];
         mRcvCancelSock = tempSockPair[1];
@@ -58,11 +65,11 @@ OSStatus XAsyncSocket::Close()
 //    printf(("XAsyncSocket::Close+++\n"));
 
     if (mSndCancelSock != -1) {
-		close(mSndCancelSock);
+		closesocket(mSndCancelSock);
 		mSndCancelSock = -1;
 	}
     if (mRcvCancelSock != -1) {
-		close(mRcvCancelSock);
+		closesocket(mRcvCancelSock);
 		mRcvCancelSock = -1;
 	}
 
@@ -81,7 +88,7 @@ OSStatus XAsyncSocket::Cancel()
 
 	mCancel = true;
 	if (mSndCancelSock >= 0) {
-		err = (write(mSndCancelSock, &cancelData, sizeof(cancelData)) > 0) ? noErr : -1;
+		err = (send(mSndCancelSock, &cancelData, sizeof(cancelData), MSG_DONTROUTE) > 0) ? noErr : -1;
 	}
 
      printf("XAsyncSocket::Cancel--- err = %d\n", err);

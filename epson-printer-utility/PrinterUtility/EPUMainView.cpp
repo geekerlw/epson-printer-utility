@@ -1,7 +1,7 @@
 #include "EPUMainView.h"
 #include "EPUPrinterController.h"
 #include "EPUMainWindow.h"
-#include "EPSPrinterController.h"
+#include "../EPSCommonLib/EPSPrinterController.h"
 #include <QTimer>
 
 EPUMainView::EPUMainView(QWidget *parent)
@@ -220,7 +220,7 @@ EPUMainView::~EPUMainView () {
 void EPUMainView::connection()
 {
     connect(m_timer, SIGNAL(timeout()),this, SLOT(update()));
-    m_timer->start(2000); //情報更新間隔
+    m_timer->start(2000); //
 }
 
 void EPUMainView::update()
@@ -288,7 +288,7 @@ void EPUMainView::updatePrinterInkInfo()
         }
         m_inkLevelViewArray.clear();
 
-		if  (inkInfo.showInkInfo){//インク情報表示機種
+		if  (inkInfo.showInkInfo){//
 				for (int i = 0; i < inkInfo.number; i++)
 				{
 				    EPUInkLevelView* ink = new EPUInkLevelView(Qt::black);
@@ -312,7 +312,7 @@ void EPUMainView::updatePrinterInkInfo()
 				    ink->SetInkLevel(level);
 				}
 
-		}else{//インク情報非表示機種
+		}else{//
 				//Ink Low エラーのチェック
 				QString EndInk[EPS_INK_NUM];
 				int endink_num = 0;
@@ -343,7 +343,7 @@ void EPUMainView::updatePrinterInkInfo()
 			    EPUInkLevelView* ink = new EPUInkLevelView(Qt::black);
 			    ink->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
 			    ink->setFixedHeight(100);
-				ink->SetSmartCharge(TRUE);//スマートチャージ機
+				ink->SetSmartCharge(TRUE);//
 				ink->SetInkEndCartridge(endink_num, EndInk);
 			    m_inkLevelViewArray.push_back(ink);
 			    m_pInkBox->addWidget(ink);
@@ -841,7 +841,7 @@ void EPUMainView::updateCurrenInkJetPrinterStaus()
 		if  (inkInfo.showInkLow){
 			PrinterLogoWarning();
 		}else{
-			PrinterLogoNormal();	//スマートチャージ対応機
+			PrinterLogoNormal();	//
 		}	
 	}
 

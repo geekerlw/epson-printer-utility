@@ -261,7 +261,7 @@ extern "C" {
 # define _IOC_READ	2U
 #endif
 
-#define FIONBIO		0x5421
+//#define FIONBIO		0x5421
 
 #define _IOC_NRBITS	8
 #define _IOC_TYPEBITS	8

@@ -41,6 +41,8 @@
 #ifdef GCOMSW_CMD_PCL
 #include "epson-pcl.h"
 #endif
+
+#pragma comment(lib, "Ws2_32.lib")
 /*------------------------------------  Definition   -----------------------------------*/
 /*******************************************|********************************************/
     /*** Index of printing quality                                                      */

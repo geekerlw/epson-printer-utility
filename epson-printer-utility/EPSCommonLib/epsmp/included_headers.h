@@ -31,9 +31,9 @@
 #include <process.h>
 #include <windows.h>
 #include <conio.h>
-#include "win_cmn.h"
-#include "win_net.h"
-#include "win_usb.h"
+//#include "win_cmn.h"
+//#include "win_net.h"
+//#include "win_usb.h"
 #elif defined(unix) || defined(__unix)
 #include "linux/linux_cmn.h"
 #include "linux/linux_net.h"
@@ -45,7 +45,7 @@
 
     /*** The header inclusion for the ESC/P-R Library                                   */
     /*** -------------------------------------------------------------------------------*/
-#include "epson-escpr-api.h"
+#include "../escpr-lib/inc/epson-escpr-api.h"
 
 
     /*** Image Preprocessing and Parsing                                                */

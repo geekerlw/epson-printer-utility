@@ -135,7 +135,7 @@ void EPUPrinterListDialog::runRefreshPrinterListLoop()
 
     EPUPrinterController* controller = EPUPrinterController::GetInstance();
     EPSPrinterController* controlLib = EPSPrinterController::GetInstance();
-    sleep(3);
+    Sleep(3000);
     /*controlLib->ReleaseInstance();
     controlLib->InitializeCommonLib();*/
     controller->FreeThreadUpdateStatus();

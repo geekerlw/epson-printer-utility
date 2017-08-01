@@ -27,6 +27,8 @@
 #include "backend_api.h"
 const char Packet_Key[] = "pcp";
 
+#pragma comment(lib, "Ws2_32.lib")
+
 #ifndef MSG_NOSIGNAL
 #define MSG_NOSIGNAL 0x2000
 #endif
