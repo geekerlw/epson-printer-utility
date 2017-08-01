@@ -61,7 +61,7 @@ sock_open(void)
 	len = sizeof(address);
 	if (connect(sockfd, (struct sockaddr *)&address, len))
 	{
-		return -1;
+		return 0;
 	}
 
 	server_sock_fd = sockfd;
