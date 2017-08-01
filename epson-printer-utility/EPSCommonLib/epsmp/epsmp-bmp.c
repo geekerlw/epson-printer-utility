@@ -40,7 +40,7 @@
 #if defined(WIN32)		
 #include <windows.h>				/* BITMAPFILEHEADER define */
 #endif
-#include "epson-escpr-mem.h"
+#include "../escpr-lib/inc/epson-escpr-mem.h"
 #include "epsmp-image.h"            /* General image functions                          */
 #include "epsmp-bmp.h"
 

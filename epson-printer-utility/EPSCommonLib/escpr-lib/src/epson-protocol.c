@@ -36,11 +36,11 @@
 
 /*------------------------------------  Includes   -------------------------------------*/
 /*******************************************|********************************************/
-#include "epson-escpr-pvt.h"
-#include "epson-escpr-err.h"
-#include "err.h"
-#include "epson-escpr-services.h"
-#include "epson-escpr-mem.h"
+#include "../inc/epson-escpr-pvt.h"
+#include "../inc/epson-escpr-err.h"
+#include "../inc/err.h"
+#include "../inc/epson-escpr-services.h"
+#include "../inc/epson-escpr-mem.h"
 #ifdef GCOMSW_CMD_ESCPAGE
 #include "epson-escpage.h"
 #endif
@@ -50,15 +50,15 @@
 #ifdef GCOMSW_CMD_PCL
 #include "epson-pcl.h"
 #endif
-#include "err.h"
-#include "epson-protocol.h"
+#include "../inc/err.h"
+#include "../inc/epson-protocol.h"
 
 #ifdef GCOMSW_PRT_USE_USB
 #include "epson-usb.h"
 #endif
 
 #ifdef GCOMSW_PRT_USE_LPR
-#include "epson-net-lpr.h"
+#include "../inc/epson-net-lpr.h"
 #endif
 
 #ifdef GCOMSW_PRT_USE_RAW

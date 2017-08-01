@@ -31,9 +31,9 @@
 
 /*------------------------------------  Includes   -------------------------------------*/
 /*******************************************|********************************************/
-#include "epson-escpr-def.h"
-#include "epson-escpr-err.h"
-#include "epson-escpr-mem.h"
+#include "../inc/epson-escpr-def.h"
+#include "../inc/epson-escpr-err.h"
+#include "../inc/epson-escpr-mem.h"
 
 /*----------------------------  ESC/P-R Lib Global Variables  --------------------------*/
 /*******************************************|********************************************/

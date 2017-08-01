@@ -1,7 +1,8 @@
 #include "EPSCommunicator.h"
 #include "EPSReplyParser.h"
 #include <QDebug>
-#include <cups/cups.h>
+#include "epsmp/linux/linux_cmn.h"
+//#include <cups/cups.h>
 
 #include "../BackendLib/backend_api.h"
 

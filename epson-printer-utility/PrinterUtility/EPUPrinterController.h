@@ -3,7 +3,7 @@
 
 #include "../EPUCommon/EThread.h"
 #include "EPUPrinter.h"
-#include "EPSPrinterController.h"
+#include "../EPSCommonLib/EPSPrinterController.h"
 
 class EPUPrinterController
 {

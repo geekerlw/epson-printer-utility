@@ -2,12 +2,13 @@
 #define EPUMAINCONTROLLER_H
 
 #include <QApplication>
-#include <unistd.h>
+//#include <unistd.h>
+#include <Windows.h>
 #include "EPUMainWindow.h"
 #include "EPUCallbackObject.h"
 #include "EPUMainView.h"
 #include "EPUMaintenanceGuideView.h"
-#include "EPSPrinterController.h"
+#include "../EPSCommonLib/EPSPrinterController.h"
 #include <QTimer>
 
 class EPUMainController: public EPUCallbackObject

@@ -33,7 +33,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "err.h"
+#include "../inc/err.h"
 #include "time.h"
 
 #define HAVE_DEBUG 0

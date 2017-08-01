@@ -19,7 +19,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
-#include <sys/socket.h>
+//#include <sys/socket.h>
+//#include <winsock.h>
 #include "backend_api.h"
 #include "ekpcom.h"
 

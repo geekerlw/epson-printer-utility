@@ -25,9 +25,9 @@
 
 /*------------------------------------  Includes   -------------------------------------*/
 /*******************************************|********************************************/
-#include "epson-escpr-err.h"
-#include "epson-protocol.h"
-#include "epson-escpr-mem.h"
+#include "../inc/epson-escpr-err.h"
+#include "../inc/epson-protocol.h"
+#include "../inc/epson-escpr-mem.h"
 
 #ifdef GCOMSW_PRT_USE_USB
 #include "epson-usb.h"
@@ -35,7 +35,7 @@
 #ifdef GCOMSW_PRT_USE_NETWORK
 #include "epson-net-snmp.h"
 #endif
-#include "epson-escpr-closed.h"
+#include "../inc/epson-escpr-closed.h"
 
 /*--------------------------------  Local Definition   ---------------------------------*/
 /*******************************************|********************************************/

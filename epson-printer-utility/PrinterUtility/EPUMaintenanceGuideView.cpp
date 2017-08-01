@@ -1,5 +1,5 @@
 #include "EPUMaintenanceGuideView.h"
-#include "EPSPrinterController.h"
+#include "../EPSCommonLib/EPSPrinterController.h"
 #include "EPUMainWindow.h"
 
 EPUMaintenanceGuideView::EPUMaintenanceGuideView(QWidget *parent)

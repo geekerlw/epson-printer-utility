@@ -16,12 +16,12 @@
 
 /*------------------------------------  Includes   -------------------------------------*/
 /*******************************************|********************************************/
-#include "epson-escpr-err.h"
-#include "epson-escpr-media.h"
-#include "epson-escpr-mem.h"
-#include "epson-escpage.h"
-#include "epson-escpage-comp.h"
-#include "epson-escpage-color.h"
+#include "../inc/epson-escpr-err.h"
+#include "../inc/epson-escpr-media.h"
+#include "../inc/epson-escpr-mem.h"
+#include "../inc/epson-escpage.h"
+#include "../inc/epson-escpage-comp.h"
+#include "../inc/epson-escpage-color.h"
 
 /*-----------------------------  Local Macro Definitions -------------------------------*/
 /*******************************************|********************************************/

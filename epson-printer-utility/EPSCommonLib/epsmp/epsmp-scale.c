@@ -30,6 +30,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "../escpr-lib/inc/epson-escpr-api.h"
 #include "epsmp-scale.h"
 
 /*------------------------------------  Definition   -----------------------------------*/

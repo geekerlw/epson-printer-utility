@@ -1,7 +1,7 @@
 #ifndef EPUPRINTER_H
 #define EPUPRINTER_H
 
-#include "epson-escpr-def.h"
+#include "../EPSCommonLib/escpr-lib/inc/epson-escpr-def.h"
 #include <QString>
 
 enum

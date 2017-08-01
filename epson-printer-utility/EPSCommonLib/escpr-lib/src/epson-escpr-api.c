@@ -63,18 +63,18 @@
 
 /*------------------------------------  Includes   -------------------------------------*/
 /*******************************************|********************************************/
-#include "epson-escpr-pvt.h"
-#include "epson-escpr-services.h"
-#include "epson-escpr-mem.h"
-#include "epson-protocol.h"
-#include "epson-layout.h"
+#include "../inc/epson-escpr-pvt.h"
+#include "../inc/epson-escpr-services.h"
+#include "../inc/epson-escpr-mem.h"
+#include "../inc/epson-protocol.h"
+#include "../inc/epson-layout.h"
 #ifdef GCOMSW_CMD_ESCPAGE
 #include "epson-escpage.h"
 	#ifdef GCOMSW_CMD_ESCPAGE_S
 	#include "epson-escpage-s.h"
 	#endif
 #endif
-#include "epson-escpr-api.h"
+#include "../inc/epson-escpr-api.h"
 
 
 /*----------------------------  ESC/P-R Lib Global Variables  --------------------------*/

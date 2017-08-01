@@ -3,7 +3,8 @@
 
 #include <QObject>
 #include <QApplication>
-#include <unistd.h>
+//#include <unistd.h>
+#include <Windows.h>
 #include <QListView>
 #include <QDialog>
 #include <QVBoxLayout>

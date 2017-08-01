@@ -16,17 +16,17 @@
 
 /*------------------------------------  Includes   -------------------------------------*/
 /*******************************************|********************************************/
-#include "epson-escpr-err.h"
-#include "epson-escpr-mem.h"
-#include "epson-escpage-color.h"
-#include "epson-escpage-mono.h"
+#include "../inc/epson-escpr-err.h"
+#include "../inc/epson-escpr-mem.h"
+#include "../inc/epson-escpage-color.h"
+#include "../inc/epson-escpage-mono.h"
 #ifdef GCOMSW_CMD_ESCPAGE_S
 #include "epson-escpage-s.h"
 #endif
 #ifdef GCOMSW_CMD_PCL
 #include "epson-pcl.h"
 #endif
-#include "epson-escpage.h"
+#include "../inc/epson-escpage.h"
 
 /*-----------------------------  Local Macro Definitions -------------------------------*/
 /*******************************************|********************************************/

@@ -30,11 +30,11 @@
 
 /*------------------------------------  Includes   -------------------------------------*/
 /*******************************************|********************************************/
-#include "epson-escpr-err.h"
-#include "epson-escpr-mem.h"
-#include "epson-escpr-media.h"
-#include "epson-escpr-services.h"
-#include "err.h"
+#include "../inc/epson-escpr-err.h"
+#include "../inc/epson-escpr-mem.h"
+#include "../inc/epson-escpr-media.h"
+#include "../inc/epson-escpr-services.h"
+#include "../inc/err.h"
 #ifdef GCOMSW_CMD_ESCPAGE_S
 #include "epson-escpage-s.h"
 #endif

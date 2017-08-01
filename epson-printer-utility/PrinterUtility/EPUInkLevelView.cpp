@@ -3,6 +3,7 @@
 #include "EPUPrinterController.h"
 #include "EPUPrinter.h"
 #include "EPUMainView.h"
+#include "../EPSCommonLib/escpr-lib/inc/epson-escpr-err.h"
 
 EPUInkLevelView::EPUInkLevelView(QColor color, const QString& inkName, QWidget *parent)
     : QWidget(parent)

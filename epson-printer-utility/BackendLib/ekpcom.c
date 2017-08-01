@@ -16,14 +16,20 @@
 * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 #include <sys/types.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <unistd.h>
+//#include <sys/socket.h>
+//#include <netinet/in.h>
+//#include <unistd.h>
+#include <winsock.h>
+#include <Windows.h>
 #include <stdio.h>
 #include <string.h>
 #include "ekpcom.h"
 #include "backend_api.h"
 const char Packet_Key[] = "pcp";
+
+#ifndef MSG_NOSIGNAL
+#define MSG_NOSIGNAL 0x2000
+#endif
 
 enum _PACKET_DATA
 {

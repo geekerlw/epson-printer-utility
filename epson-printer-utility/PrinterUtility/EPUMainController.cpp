@@ -41,7 +41,7 @@ EPUMainController::EPUMainController()
 
 EPUMainController::~EPUMainController()
 {
-	sleep(1);
+	Sleep(1000);
     SAFEDELETE(m_pMainView);
     SAFEDELETE(m_pMainWindow);
     EPUPrinterController::ReleaseInstance();

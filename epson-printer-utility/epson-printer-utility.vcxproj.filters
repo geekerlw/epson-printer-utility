@@ -185,14 +185,14 @@
     <ClCompile Include="EPSCommonLib\epsmp\linux\XAsyncSocket.cpp">
       <Filter>Source Files\EPSCommonLib\epsmp\linux</Filter>
     </ClCompile>
-    <ClCompile Include="EPUCommon\EPUSocketClient.cpp">
-      <Filter>Source Files\EPUCommon</Filter>
-    </ClCompile>
-    <ClCompile Include="EPUCommon\EPUSocketServer.cpp">
-      <Filter>Source Files\EPUCommon</Filter>
-    </ClCompile>
     <ClCompile Include="EPUCommon\EThread.cpp">
       <Filter>Source Files\EPUCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EThread.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EThread.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -284,6 +284,9 @@
     </Filter>
     <Filter Include="Resource Files\PrinterUtility\Languages">
       <UniqueIdentifier>{c83ac08e-2e8a-496d-846c-327f96d78e65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\EPUCommon">
+      <UniqueIdentifier>{242c50c7-7041-4fd4-8d93-f96be25a485b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -437,6 +440,9 @@
     <ClInclude Include="EPSCommonLib\escpr-lib\inc\err.h">
       <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
     </ClInclude>
+    <ClInclude Include="EPUCommon\EPUCommonDef.h">
+      <Filter>Header Files\EPUCommon</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="PrinterUtility\EPUMaintenanceGuideView.h">
@@ -456,6 +462,9 @@
     </CustomBuild>
     <CustomBuild Include="PrinterUtility\EPUView.h">
       <Filter>Header Files\PrinterUtility</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EPUCommon\EThread.h">
+      <Filter>Header Files\EPUCommon</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>

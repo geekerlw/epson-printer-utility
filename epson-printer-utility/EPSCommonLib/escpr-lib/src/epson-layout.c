@@ -27,11 +27,11 @@
 
 /*------------------------------------  Includes   -------------------------------------*/
 /*******************************************|********************************************/
-#include "epson-escpr-def.h"
-#include "epson-escpr-err.h"
-#include "epson-escpr-media.h"
-#include "epson-escpr-mem.h"
-#include "epson-layout.h"
+#include "../inc/epson-escpr-def.h"
+#include "../inc/epson-escpr-err.h"
+#include "../inc/epson-escpr-media.h"
+#include "../inc/epson-escpr-mem.h"
+#include "../inc/epson-layout.h"
 
 /*-----------------------------  Local Macro Definitions -------------------------------*/
 /*******************************************|********************************************/

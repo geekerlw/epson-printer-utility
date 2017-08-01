@@ -34,14 +34,14 @@
 
 /*------------------------------------  Includes   -------------------------------------*/
 /*******************************************|********************************************/
-#include "epson-escpr-pvt.h"
-#include "epson-escpr-err.h"
-#include "epson-escpr-services.h"
-#include "epson-escpr-mem.h"
-#include "epson-protocol.h"
-#include "epson-cbt.h"
-#include "epson-usb.h"
-#include "err.h"
+#include "../inc/epson-escpr-pvt.h"
+#include "../inc/epson-escpr-err.h"
+#include "../inc/epson-escpr-services.h"
+#include "../inc/epson-escpr-mem.h"
+#include "../inc/epson-protocol.h"
+#include "../inc/epson-cbt.h"
+#include "../inc/epson-usb.h"
+#include "../inc/err.h"
 
 /*--------------------------------  Local Definition   ---------------------------------*/
 /*******************************************|********************************************/

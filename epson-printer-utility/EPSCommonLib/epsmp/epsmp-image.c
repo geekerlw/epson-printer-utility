@@ -34,9 +34,10 @@
 #include <string.h>
 #include <ctype.h>
 
-#include "epson-escpr-def.h"
-#include "epson-escpr-err.h"
-#include "epson-escpr-media.h"
+#include "../escpr-lib/inc/epson-escpr-api.h"
+//#include "epson-escpr-def.h"
+//#include "epson-escpr-err.h"
+//#include "epson-escpr-media.h"
 
 #include "epsmp-image.h"
 #include "epsmp-bmp.h"

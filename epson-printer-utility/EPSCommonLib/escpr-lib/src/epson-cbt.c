@@ -29,12 +29,12 @@
 
 /*------------------------------------  Includes   -------------------------------------*/
 /*******************************************|********************************************/
-#include "epson-escpr-pvt.h"
-#include "epson-escpr-err.h"
-#include "epson-escpr-mem.h"
-#include "epson-escpr-services.h"
-#include "epson-cbt.h"
-#include "err.h"
+#include "../inc/epson-cbt.h"
+#include "../inc/epson-escpr-err.h"
+#include "../inc/epson-escpr-mem.h"
+#include "../inc/epson-escpr-services.h"
+#include "../inc/epson-cbt.h"
+#include "../inc/err.h"
 
 /*------------------------------------  Definition   -----------------------------------*/
 /*******************************************|********************************************/

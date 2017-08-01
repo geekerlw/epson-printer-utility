@@ -1,6 +1,8 @@
 #ifndef EPSREPLYPARSER_H
 #define EPSREPLYPARSER_H
 
+#include "escpr-lib/inc/epson-escpr-api.h"
+/*
 #include "epson-escpr-media.h"
 #include "epson-cbt.h"
 #include "epson-protocol.h"
@@ -10,6 +12,7 @@
 #include "epson-usb.h"
 #include "linux_cmn.h"
 #include "linux_net.h"
+*/
 
 class EPSReplyParser
 {
