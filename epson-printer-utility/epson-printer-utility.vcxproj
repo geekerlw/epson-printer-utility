@@ -68,59 +68,248 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="epsonprinterutility.cpp" />
-    <ClCompile Include="GeneratedFiles\Debug\moc_epsonprinterutility.cpp">
+    <ClCompile Include="BackendLib\backend_api.c" />
+    <ClCompile Include="BackendLib\ekpcom.c" />
+    <ClCompile Include="EPSCommonLib\EPSCommonLib.cpp" />
+    <ClCompile Include="EPSCommonLib\EPSCommunicator.cpp" />
+    <ClCompile Include="EPSCommonLib\epsmp\epsmp-bmp.c" />
+    <ClCompile Include="EPSCommonLib\epsmp\epsmp-file-io.c" />
+    <ClCompile Include="EPSCommonLib\epsmp\epsmp-image.c" />
+    <ClCompile Include="EPSCommonLib\epsmp\epsmp-jpg.c" />
+    <ClCompile Include="EPSCommonLib\epsmp\epsmp-print-io.c" />
+    <ClCompile Include="EPSCommonLib\epsmp\epsmp-prn-parse.c" />
+    <ClCompile Include="EPSCommonLib\epsmp\epsmp-rawimg.c" />
+    <ClCompile Include="EPSCommonLib\epsmp\epsmp-scale.c" />
+    <ClCompile Include="EPSCommonLib\epsmp\linux\epsmp-linux-portal-io.c" />
+    <ClCompile Include="EPSCommonLib\epsmp\linux\linux_cmn.c" />
+    <ClCompile Include="EPSCommonLib\epsmp\linux\linux_net.c" />
+    <ClCompile Include="EPSCommonLib\epsmp\linux\XAsyncSocket.cpp" />
+    <ClCompile Include="EPSCommonLib\EPSPrinterController.cpp" />
+    <ClCompile Include="EPSCommonLib\EPSReplyParser.cpp" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-cbt.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpage-color.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpage-comp.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpage-mono.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpage.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpr-api.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpr-closed.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpr-dbg.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpr-mem.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpr-services.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-layout.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-net-lpr.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-net-raw.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-net-snmp.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-protocol.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-usb.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-wifi.c" />
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\err.c" />
+    <ClCompile Include="EPUCommon\EPUSocketClient.cpp" />
+    <ClCompile Include="EPUCommon\EPUSocketServer.cpp" />
+    <ClCompile Include="EPUCommon\EThread.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_EPUMaintenanceGuideView.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\qrc_epsonprinterutility.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-      </PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-      </PrecompiledHeader>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EPUMainView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_epsonprinterutility.cpp">
+    <ClCompile Include="GeneratedFiles\Debug\moc_EPUMainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EPUOperationView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EPUPrinterListDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EPUView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EPUMaintenanceGuideView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EPUMainView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EPUMainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EPUOperationView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EPUPrinterListDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EPUView.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PrinterUtility\EPUCallbackObject.cpp" />
+    <ClCompile Include="PrinterUtility\EPUGlobal.cpp" />
+    <ClCompile Include="PrinterUtility\EPUInkLevelView.cpp" />
+    <ClCompile Include="PrinterUtility\EPUMainController.cpp" />
+    <ClCompile Include="PrinterUtility\EPUMaintenanceGuideView.cpp" />
+    <ClCompile Include="PrinterUtility\EPUMainView.cpp" />
+    <ClCompile Include="PrinterUtility\EPUMainWindow.cpp" />
+    <ClCompile Include="PrinterUtility\EPUOperationView.cpp" />
+    <ClCompile Include="PrinterUtility\EPUPrinter.cpp" />
+    <ClCompile Include="PrinterUtility\EPUPrinterController.cpp" />
+    <ClCompile Include="PrinterUtility\EPUPrinterListDialog.cpp" />
+    <ClCompile Include="PrinterUtility\EPUView.cpp" />
+    <ClCompile Include="PrinterUtility\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="epsonprinterutility.h">
+    <ClInclude Include="BackendLib\backend_api.h" />
+    <ClInclude Include="BackendLib\ekpcom.h" />
+    <ClInclude Include="EPSCommonLib\EPSCommonLib.h" />
+    <ClInclude Include="EPSCommonLib\EPSCommonLibDefine.h" />
+    <ClInclude Include="EPSCommonLib\EPSCommunicator.h" />
+    <ClInclude Include="EPSCommonLib\epsmp\epsmp-bmp.h" />
+    <ClInclude Include="EPSCommonLib\epsmp\epsmp-file-io.h" />
+    <ClInclude Include="EPSCommonLib\epsmp\epsmp-image.h" />
+    <ClInclude Include="EPSCommonLib\epsmp\epsmp-jpg.h" />
+    <ClInclude Include="EPSCommonLib\epsmp\epsmp-print-io.h" />
+    <ClInclude Include="EPSCommonLib\epsmp\epsmp-prn-parse.h" />
+    <ClInclude Include="EPSCommonLib\epsmp\epsmp-rawimg.h" />
+    <ClInclude Include="EPSCommonLib\epsmp\epsmp-scale.h" />
+    <ClInclude Include="EPSCommonLib\epsmp\included_headers.h" />
+    <ClInclude Include="EPSCommonLib\epsmp\linux\epsmp-linux-portal-io.h" />
+    <ClInclude Include="EPSCommonLib\epsmp\linux\linux_cmn.h" />
+    <ClInclude Include="EPSCommonLib\epsmp\linux\linux_net.h" />
+    <ClInclude Include="EPSCommonLib\epsmp\linux\XAsyncSocket.h" />
+    <ClInclude Include="EPSCommonLib\EPSPrinterController.h" />
+    <ClInclude Include="EPSCommonLib\EPSReplyParser.h" />
+    <ClInclude Include="EPSCommonLib\err.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-cbt.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpage-color.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpage-comp.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpage-mono.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpage.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-api.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-closed.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-dbg.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-def.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-err.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-media.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-mem.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-pvt.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-services.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-layout.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-net-lpr.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-net-raw.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-net-snmp.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-protocol.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-typedefs.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-usb.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-wifi.h" />
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\err.h" />
+    <ClInclude Include="PrinterUtility\EPUCallbackObject.h" />
+    <ClInclude Include="PrinterUtility\EPUGlobal.h" />
+    <ClInclude Include="PrinterUtility\EPUInkLevelView.h" />
+    <ClInclude Include="PrinterUtility\EPUMainController.h" />
+    <ClInclude Include="PrinterUtility\EPUPrinter.h" />
+    <ClInclude Include="PrinterUtility\EPUPrinterController.h" />
+    <CustomBuild Include="PrinterUtility\EPUView.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing epsonprinterutility.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing EPUView.h...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWidgets"</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing epsonprinterutility.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing EPUView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="PrinterUtility\EPUPrinterListDialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing EPUPrinterListDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing EPUPrinterListDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="PrinterUtility\EPUOperationView.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing EPUOperationView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing EPUOperationView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="PrinterUtility\EPUMainWindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing EPUMainWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing EPUMainWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="PrinterUtility\EPUMainView.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing EPUMainView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing EPUMainView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="PrinterUtility\EPUMaintenanceGuideView.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing EPUMaintenanceGuideView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing EPUMaintenanceGuideView.h...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWidgets"</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="epsonprinterutility.ui">
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
-    </CustomBuild>
+    <Image Include="PrinterUtility\Images\AppIcon.png" />
+    <Image Include="PrinterUtility\Images\Cleaning.png" />
+    <Image Include="PrinterUtility\Images\Cleaning_small.png" />
+    <Image Include="PrinterUtility\Images\Cleaning_small_old.png" />
+    <Image Include="PrinterUtility\Images\epson.png" />
+    <Image Include="PrinterUtility\Images\Gap.png" />
+    <Image Include="PrinterUtility\Images\Gap_small.png" />
+    <Image Include="PrinterUtility\Images\Inklow.png" />
+    <Image Include="PrinterUtility\Images\Inklow_.png" />
+    <Image Include="PrinterUtility\Images\Inkout.png" />
+    <Image Include="PrinterUtility\Images\LFP2.png" />
+    <Image Include="PrinterUtility\Images\Nozzle.png" />
+    <Image Include="PrinterUtility\Images\Nozzle_small.png" />
+    <Image Include="PrinterUtility\Images\Nozzle_small_old.png" />
+    <Image Include="PrinterUtility\Images\printer_status.png" />
+    <Image Include="PrinterUtility\Images\printer_status_error.png" />
+    <Image Include="PrinterUtility\Images\printer_status_error_laser.png" />
+    <Image Include="PrinterUtility\Images\printer_status_laser.png" />
+    <Image Include="PrinterUtility\Images\printer_status_OLD.png" />
+    <Image Include="PrinterUtility\Images\printer_status_warning.png" />
+    <Image Include="PrinterUtility\Images\printer_status_warning_laser.png" />
+    <Image Include="PrinterUtility\Images\status_indicator_offline.png" />
+    <Image Include="PrinterUtility\Images\status_indicator_online.png" />
+    <Image Include="PrinterUtility\Images\STM.png" />
+    <Image Include="PrinterUtility\Images\STM_small.png" />
+    <Image Include="PrinterUtility\Images\warning.png" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GeneratedFiles\ui_epsonprinterutility.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="epsonprinterutility.qrc">
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Rcc%27ing %(Identity)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Rcc%27ing %(Identity)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
-    </CustomBuild>
+    <None Include="PrinterUtility\Languages\utilitytr_de.qm" />
+    <None Include="PrinterUtility\Languages\utilitytr_es.qm" />
+    <None Include="PrinterUtility\Languages\utilitytr_fr.qm" />
+    <None Include="PrinterUtility\Languages\utilitytr_it.qm" />
+    <None Include="PrinterUtility\Languages\utilitytr_ja.qm" />
+    <None Include="PrinterUtility\Languages\utilitytr_ko.qm" />
+    <None Include="PrinterUtility\Languages\utilitytr_nl.qm" />
+    <None Include="PrinterUtility\Languages\utilitytr_pt.qm" />
+    <None Include="PrinterUtility\Languages\utilitytr_ru.qm" />
+    <None Include="PrinterUtility\Languages\utilitytr_zh_CN.qm" />
+    <None Include="PrinterUtility\Languages\utilitytr_zh_TW.qm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

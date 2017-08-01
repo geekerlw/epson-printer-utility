@@ -2,17 +2,197 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="epsonprinterutility.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="BackendLib\backend_api.c">
+      <Filter>Source Files\BackendLib</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_epsonprinterutility.cpp">
+    <ClCompile Include="BackendLib\ekpcom.c">
+      <Filter>Source Files\BackendLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PrinterUtility\EPUCallbackObject.cpp">
+      <Filter>Source Files\PrinterUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="PrinterUtility\EPUGlobal.cpp">
+      <Filter>Source Files\PrinterUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="PrinterUtility\EPUInkLevelView.cpp">
+      <Filter>Source Files\PrinterUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="PrinterUtility\EPUMainController.cpp">
+      <Filter>Source Files\PrinterUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="PrinterUtility\EPUMaintenanceGuideView.cpp">
+      <Filter>Source Files\PrinterUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="PrinterUtility\EPUMainView.cpp">
+      <Filter>Source Files\PrinterUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="PrinterUtility\EPUMainWindow.cpp">
+      <Filter>Source Files\PrinterUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="PrinterUtility\EPUOperationView.cpp">
+      <Filter>Source Files\PrinterUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="PrinterUtility\EPUPrinter.cpp">
+      <Filter>Source Files\PrinterUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="PrinterUtility\EPUPrinterController.cpp">
+      <Filter>Source Files\PrinterUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="PrinterUtility\EPUPrinterListDialog.cpp">
+      <Filter>Source Files\PrinterUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="PrinterUtility\EPUView.cpp">
+      <Filter>Source Files\PrinterUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="PrinterUtility\Main.cpp">
+      <Filter>Source Files\PrinterUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EPUMaintenanceGuideView.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_epsonprinterutility.cpp">
+    <ClCompile Include="GeneratedFiles\Release\moc_EPUMaintenanceGuideView.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\qrc_epsonprinterutility.cpp">
-      <Filter>Generated Files</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EPUMainView.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EPUMainView.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EPUMainWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EPUMainWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EPUOperationView.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EPUOperationView.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EPUPrinterListDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EPUPrinterListDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EPUView.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EPUView.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\EPSCommonLib.cpp">
+      <Filter>Source Files\EPSCommonLib</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\EPSCommunicator.cpp">
+      <Filter>Source Files\EPSCommonLib</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\EPSPrinterController.cpp">
+      <Filter>Source Files\EPSCommonLib</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\EPSReplyParser.cpp">
+      <Filter>Source Files\EPSCommonLib</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\epsmp\epsmp-bmp.c">
+      <Filter>Source Files\EPSCommonLib\epsmp</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\epsmp\epsmp-file-io.c">
+      <Filter>Source Files\EPSCommonLib\epsmp</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\epsmp\epsmp-image.c">
+      <Filter>Source Files\EPSCommonLib\epsmp</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\epsmp\epsmp-jpg.c">
+      <Filter>Source Files\EPSCommonLib\epsmp</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\epsmp\epsmp-print-io.c">
+      <Filter>Source Files\EPSCommonLib\epsmp</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\epsmp\epsmp-prn-parse.c">
+      <Filter>Source Files\EPSCommonLib\epsmp</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\epsmp\epsmp-rawimg.c">
+      <Filter>Source Files\EPSCommonLib\epsmp</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\epsmp\epsmp-scale.c">
+      <Filter>Source Files\EPSCommonLib\epsmp</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-cbt.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpage.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpage-color.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpage-comp.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpage-mono.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpr-api.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpr-closed.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpr-dbg.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpr-mem.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-escpr-services.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-layout.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-net-lpr.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-net-raw.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-net-snmp.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-protocol.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-usb.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\epson-wifi.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\escpr-lib\src\err.c">
+      <Filter>Source Files\EPSCommonLib\escpr-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\epsmp\linux\epsmp-linux-portal-io.c">
+      <Filter>Source Files\EPSCommonLib\epsmp\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\epsmp\linux\linux_cmn.c">
+      <Filter>Source Files\EPSCommonLib\epsmp\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\epsmp\linux\linux_net.c">
+      <Filter>Source Files\EPSCommonLib\epsmp\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="EPSCommonLib\epsmp\linux\XAsyncSocket.cpp">
+      <Filter>Source Files\EPSCommonLib\epsmp\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="EPUCommon\EPUSocketClient.cpp">
+      <Filter>Source Files\EPUCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="EPUCommon\EPUSocketServer.cpp">
+      <Filter>Source Files\EPUCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="EPUCommon\EThread.cpp">
+      <Filter>Source Files\EPUCommon</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -51,21 +231,346 @@
       <Extensions>ui</Extensions>
       <ParseFiles>true</ParseFiles>
     </Filter>
+    <Filter Include="Source Files\BackendLib">
+      <UniqueIdentifier>{54e39846-1c06-4b4b-9d9e-85e10b50bd67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EPSCommonLib">
+      <UniqueIdentifier>{8c18f8c6-d76f-4d46-8d7d-41fffde42c29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EPUCommon">
+      <UniqueIdentifier>{741707df-0258-4d3e-bdc4-f3fc53789c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PrinterUtility">
+      <UniqueIdentifier>{87db4d04-51e5-4f9e-bc05-e46c655178ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BackendLib">
+      <UniqueIdentifier>{afff2577-1813-4ca8-8eee-0fcf9e932d85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\EPSCommonLib">
+      <UniqueIdentifier>{a224fd4c-bf1e-4cad-bf8b-10e0e0cf02c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PrinterUtility">
+      <UniqueIdentifier>{ce6870d7-3dec-4174-a67e-1a68b119b1e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\EPSCommonLib\epsmp">
+      <UniqueIdentifier>{e58cc311-18e3-4ec9-af8a-932ba6eb134a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\EPSCommonLib\epsmp\linux">
+      <UniqueIdentifier>{05e9c903-1ae3-4a94-9ec2-cf09cab3b08e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\EPSCommonLib\escpr-lib">
+      <UniqueIdentifier>{a45a6f1c-18a7-430b-9a7f-a4620b5d3fc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\EPSCommonLib\escpr-lib\inc">
+      <UniqueIdentifier>{43cd722c-2754-4135-818d-0b4c43e10762}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EPSCommonLib\epsmp">
+      <UniqueIdentifier>{256b8167-2aec-422a-a2bc-57166b728543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EPSCommonLib\escpr-lib">
+      <UniqueIdentifier>{bbdc6c66-3403-4322-969c-60bdc02364bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EPSCommonLib\escpr-lib\src">
+      <UniqueIdentifier>{e80cc5cd-0cfc-4ce1-82aa-ab55e1b44886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EPSCommonLib\epsmp\linux">
+      <UniqueIdentifier>{981c9007-9b7a-4e37-8ec1-c14c3049e5c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\PrinterUtility">
+      <UniqueIdentifier>{9a8c126e-1506-4326-b602-8352adcfe9bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\PrinterUtility\Images">
+      <UniqueIdentifier>{635e34a7-7127-493d-a507-e62876cf11de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\PrinterUtility\Languages">
+      <UniqueIdentifier>{c83ac08e-2e8a-496d-846c-327f96d78e65}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="epsonprinterutility.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="epsonprinterutility.ui">
-      <Filter>Form Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="epsonprinterutility.qrc">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="GeneratedFiles\ui_epsonprinterutility.h">
-      <Filter>Generated Files</Filter>
+    <ClInclude Include="BackendLib\backend_api.h">
+      <Filter>Header Files\BackendLib</Filter>
     </ClInclude>
+    <ClInclude Include="BackendLib\ekpcom.h">
+      <Filter>Header Files\BackendLib</Filter>
+    </ClInclude>
+    <ClInclude Include="PrinterUtility\EPUCallbackObject.h">
+      <Filter>Header Files\PrinterUtility</Filter>
+    </ClInclude>
+    <ClInclude Include="PrinterUtility\EPUGlobal.h">
+      <Filter>Header Files\PrinterUtility</Filter>
+    </ClInclude>
+    <ClInclude Include="PrinterUtility\EPUInkLevelView.h">
+      <Filter>Header Files\PrinterUtility</Filter>
+    </ClInclude>
+    <ClInclude Include="PrinterUtility\EPUMainController.h">
+      <Filter>Header Files\PrinterUtility</Filter>
+    </ClInclude>
+    <ClInclude Include="PrinterUtility\EPUPrinter.h">
+      <Filter>Header Files\PrinterUtility</Filter>
+    </ClInclude>
+    <ClInclude Include="PrinterUtility\EPUPrinterController.h">
+      <Filter>Header Files\PrinterUtility</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\EPSCommonLib.h">
+      <Filter>Header Files\EPSCommonLib</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\EPSCommonLibDefine.h">
+      <Filter>Header Files\EPSCommonLib</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\EPSCommunicator.h">
+      <Filter>Header Files\EPSCommonLib</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\EPSPrinterController.h">
+      <Filter>Header Files\EPSCommonLib</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\EPSReplyParser.h">
+      <Filter>Header Files\EPSCommonLib</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\err.h">
+      <Filter>Header Files\EPSCommonLib</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\epsmp\epsmp-bmp.h">
+      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\epsmp\epsmp-file-io.h">
+      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\epsmp\epsmp-image.h">
+      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\epsmp\epsmp-jpg.h">
+      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\epsmp\epsmp-print-io.h">
+      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\epsmp\epsmp-prn-parse.h">
+      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\epsmp\epsmp-rawimg.h">
+      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\epsmp\epsmp-scale.h">
+      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\epsmp\included_headers.h">
+      <Filter>Header Files\EPSCommonLib\epsmp</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\epsmp\linux\epsmp-linux-portal-io.h">
+      <Filter>Header Files\EPSCommonLib\epsmp\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\epsmp\linux\linux_cmn.h">
+      <Filter>Header Files\EPSCommonLib\epsmp\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\epsmp\linux\linux_net.h">
+      <Filter>Header Files\EPSCommonLib\epsmp\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\epsmp\linux\XAsyncSocket.h">
+      <Filter>Header Files\EPSCommonLib\epsmp\linux</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-cbt.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpage.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpage-color.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpage-comp.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpage-mono.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-api.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-closed.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-dbg.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-def.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-err.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-media.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-mem.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-pvt.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-escpr-services.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-layout.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-net-lpr.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-net-raw.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-net-snmp.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-protocol.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-typedefs.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-usb.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\epson-wifi.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="EPSCommonLib\escpr-lib\inc\err.h">
+      <Filter>Header Files\EPSCommonLib\escpr-lib\inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="PrinterUtility\EPUMaintenanceGuideView.h">
+      <Filter>Header Files\PrinterUtility</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PrinterUtility\EPUMainView.h">
+      <Filter>Header Files\PrinterUtility</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PrinterUtility\EPUMainWindow.h">
+      <Filter>Header Files\PrinterUtility</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PrinterUtility\EPUOperationView.h">
+      <Filter>Header Files\PrinterUtility</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PrinterUtility\EPUPrinterListDialog.h">
+      <Filter>Header Files\PrinterUtility</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PrinterUtility\EPUView.h">
+      <Filter>Header Files\PrinterUtility</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PrinterUtility\Images\AppIcon.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\Cleaning.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\Cleaning_small.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\Cleaning_small_old.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\epson.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\Gap.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\Gap_small.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\Inklow.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\Inklow_.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\Inkout.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\LFP2.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\Nozzle.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\Nozzle_small.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\Nozzle_small_old.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\printer_status.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\printer_status_error.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\printer_status_error_laser.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\printer_status_laser.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\printer_status_OLD.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\printer_status_warning.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\printer_status_warning_laser.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\status_indicator_offline.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\status_indicator_online.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\STM.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\STM_small.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+    <Image Include="PrinterUtility\Images\warning.png">
+      <Filter>Resource Files\PrinterUtility\Images</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PrinterUtility\Languages\utilitytr_de.qm">
+      <Filter>Resource Files\PrinterUtility\Languages</Filter>
+    </None>
+    <None Include="PrinterUtility\Languages\utilitytr_es.qm">
+      <Filter>Resource Files\PrinterUtility\Languages</Filter>
+    </None>
+    <None Include="PrinterUtility\Languages\utilitytr_fr.qm">
+      <Filter>Resource Files\PrinterUtility\Languages</Filter>
+    </None>
+    <None Include="PrinterUtility\Languages\utilitytr_it.qm">
+      <Filter>Resource Files\PrinterUtility\Languages</Filter>
+    </None>
+    <None Include="PrinterUtility\Languages\utilitytr_ja.qm">
+      <Filter>Resource Files\PrinterUtility\Languages</Filter>
+    </None>
+    <None Include="PrinterUtility\Languages\utilitytr_ko.qm">
+      <Filter>Resource Files\PrinterUtility\Languages</Filter>
+    </None>
+    <None Include="PrinterUtility\Languages\utilitytr_nl.qm">
+      <Filter>Resource Files\PrinterUtility\Languages</Filter>
+    </None>
+    <None Include="PrinterUtility\Languages\utilitytr_pt.qm">
+      <Filter>Resource Files\PrinterUtility\Languages</Filter>
+    </None>
+    <None Include="PrinterUtility\Languages\utilitytr_ru.qm">
+      <Filter>Resource Files\PrinterUtility\Languages</Filter>
+    </None>
+    <None Include="PrinterUtility\Languages\utilitytr_zh_CN.qm">
+      <Filter>Resource Files\PrinterUtility\Languages</Filter>
+    </None>
+    <None Include="PrinterUtility\Languages\utilitytr_zh_TW.qm">
+      <Filter>Resource Files\PrinterUtility\Languages</Filter>
+    </None>
   </ItemGroup>
 </Project>
