@@ -2,7 +2,9 @@
 #include <QDebug>
 
 #include "EPSCommonLibDefine.h"
-#include "../BackendLib/backend_api.h"
+extern "C" {
+	#include "../BackendLib/backend_api.h"
+}
 
 
 EPSCommunicator* EPSCommunicator::pSelf = NULL;
