@@ -1,5 +1,4 @@
 #include "EPUPrinter.h"
-//#include <cups/cups.h>
 #include <QDebug>
 
 EPUPrinter::EPUPrinter()

@@ -1,19 +1,6 @@
 #ifndef EPSCOMMUNICATOR_H
 #define EPSCOMMUNICATOR_H
 
-/*
-#include "epson-escpr-media.h"
-#include "epson-cbt.h"
-#include "epson-protocol.h"
-#include "epson-net-snmp.h"
-#include "epson-net-lpr.h"
-#include "epson-net-lpr.h"
-#include "epson-usb.h"
-*/
-//#include "linux_cmn.h"
-//#include "linux_net.h"
-//#include "epson-protocol.h"
-//#include "epsmp-common-functions.h"
 #include "epsmp/linux/epsmp-linux-portal-io.h"
 #include "epsmp/epsmp-file-io.h"
 #include "escpr-lib/inc/epson-escpr-api.h"

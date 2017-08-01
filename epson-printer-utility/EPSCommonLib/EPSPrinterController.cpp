@@ -1,7 +1,5 @@
 #include "EPSPrinterController.h"
-#include "EPSReplyParser.h"
 #include <QDebug>
-//#include "err.h"
 
 EPSPrinterController* EPSPrinterController::pSelf = NULL;
 
@@ -38,11 +36,6 @@ void EPSPrinterController::ReleaseInstance()
 
 bool EPSPrinterController::InitializeCommonLib()
 {
-    EPSReplyParser* parser = EPSReplyParser::GetInstance();
-    if (!parser->InitializeParser())
-    {
-        return false;
-    }
     EPSCommunicator* communicator = EPSCommunicator::GetInstance();
     if (!communicator->InitializeCommunicator())
     {
@@ -56,7 +49,6 @@ bool EPSPrinterController::InitializeCommonLib()
 void EPSPrinterController::ReleaseCommonLib()
 {
     EPSCommunicator::ReleaseInstance();
-    EPSReplyParser::ReleaseInstance();
 }
 
 void EPSPrinterController::StartFindPrinter()

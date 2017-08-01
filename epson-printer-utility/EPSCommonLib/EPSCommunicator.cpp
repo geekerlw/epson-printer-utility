@@ -1,13 +1,8 @@
 #include "EPSCommunicator.h"
-#include "EPSReplyParser.h"
 #include <QDebug>
-#include <Windows.h>
-#include "epsmp/linux/linux_cmn.h"
-//#include <cups/cups.h>
 
 #include "../BackendLib/backend_api.h"
 
-#pragma comment(lib, "Ws2_32.lib")
 
 EPSCommunicator* EPSCommunicator::pSelf = NULL;
 
@@ -59,6 +54,7 @@ void EPSCommunicator::ReleaseInstance()
 
 bool EPSCommunicator::InitializeCommunicator()
 {
+#if 0
     int ret = -1;
     EPS_ERR_CODE    retStatus = 0;              /* Return status of internal calls      */
     APP_SETTING		stAppSetting;
@@ -132,7 +128,6 @@ bool EPSCommunicator::InitializeCommunicator()
     externNetFuncPtr.accept			= NULL;
     externNetFuncPtr.getsockname		= NULL;
 #endif
-#if 0
     externCmnFuncPtr.version           = EPS_CMNFUNC_VER_CUR;
     externCmnFuncPtr.findCallback		= &FindPrinterCallback;
     externCmnFuncPtr.memAlloc			= &epsmpMemAlloc;
@@ -144,7 +139,6 @@ bool EPSCommunicator::InitializeCommunicator()
     externCmnFuncPtr.unlockSync		= &epsmpUnlockSync;
     externCmnFuncPtr.stateCallback		= NULL;	/* current version unused */
     retStatus = epsInitDriver(stAppSetting.nComMode, &externUsbFuncPtr, &externNetFuncPtr, &externCmnFuncPtr);
-#endif
     if (retStatus != EPS_ERR_NONE){
         //out_printf("ERROR: epsInitDriver returned with error: %d\n", retStatus);
         //goto APP_END;
@@ -153,7 +147,7 @@ bool EPSCommunicator::InitializeCommunicator()
 
     m_searchAttr.probe.version = EPS_PROBE_VER_CUR;
     m_searchAttr.probe.dsc.addr.protocol = EPS_PRT_PROTOCOL(stAppSetting.nComMode);
-
+#endif /* if 0 begin, no init escpr-lib */
 
 /*     Initialize library (Connect to USB backend) */
 	int ret2 = ECB_DAEMON_NO_ERROR;
@@ -182,7 +176,11 @@ EPS_ERR_CODE EPSCommunicator::NozzleCheckPrinter()
 			retState = EPS_PRNERR_COMM;
 		}
 
-	}else{
+	}else {
+		/* do nothing here, communicator using escpr-lib */
+	}
+/*
+		else{
 
 		EPS_JOB_ATTRIB		jobAttr;
 		EPS_UINT8			*buf, *p;
@@ -197,9 +195,9 @@ EPS_ERR_CODE EPSCommunicator::NozzleCheckPrinter()
 		buf = p = NULL;
 		bufsize = sentsize = 0;
 
-		jobAttr.version = EPS_JOB_ATTRIB_VER_CUR;			/* structure version = 2        */
-		jobAttr.colorPlane = EPS_CP_PRINTCMD;				/* data format = print data     */
-		jobAttr.cmdType = EPS_MNT_NOZZLE;								/* command type                 */
+		jobAttr.version = EPS_JOB_ATTRIB_VER_CUR;
+		jobAttr.colorPlane = EPS_CP_PRINTCMD;				
+		jobAttr.cmdType = EPS_MNT_NOZZLE;								
 
 
 		retState = epsStartJob(&jobAttr);
@@ -224,7 +222,6 @@ EPS_ERR_CODE EPSCommunicator::NozzleCheckPrinter()
 
 		    retState = epsSendData(&prnData);
 		    if( EPS_ERR_NONE != retState ){
-		        /* Check Status & Continue */
 		        retState = epsContinueJob();
 		    }
 
@@ -234,6 +231,7 @@ EPS_ERR_CODE EPSCommunicator::NozzleCheckPrinter()
 
 		retState = epsEndJob();
 	}
+*/
 
     return retState;
 }
@@ -254,7 +252,11 @@ EPS_ERR_CODE EPSCommunicator::HeadCleanPrinter()
 			retState = EPS_PRNERR_COMM;
 		}
 
-	}else{
+	}else {
+		/* do noting here, escpr-lib func here */
+	}
+/*
+		else{
 
 		EPS_JOB_ATTRIB		jobAttr;
 		EPS_UINT8			*buf, *p;
@@ -269,9 +271,9 @@ EPS_ERR_CODE EPSCommunicator::HeadCleanPrinter()
 		buf = p = NULL;
 		bufsize = sentsize = 0;
 
-		jobAttr.version = EPS_JOB_ATTRIB_VER_CUR;			/* structure version = 2        */
-		jobAttr.colorPlane = EPS_CP_PRINTCMD;				/* data format = print data     */
-		jobAttr.cmdType = EPS_MNT_CLEANING;					/* command type                 */
+		jobAttr.version = EPS_JOB_ATTRIB_VER_CUR;			
+		jobAttr.colorPlane = EPS_CP_PRINTCMD;				
+		jobAttr.cmdType = EPS_MNT_CLEANING;					
 
 		retState = epsStartJob(&jobAttr);
 
@@ -294,7 +296,6 @@ EPS_ERR_CODE EPSCommunicator::HeadCleanPrinter()
 
 		    retState = epsSendData(&prnData);
 		    if( EPS_ERR_NONE != retState ){
-		        /* Check Status & Continue */
 		        retState = epsContinueJob();
 		    }
 
@@ -304,12 +305,15 @@ EPS_ERR_CODE EPSCommunicator::HeadCleanPrinter()
 
 		retState = epsEndJob();
 	}
+*/
 
     return retState;
 }
 
 void EPSCommunicator::internalRunFindPrinterLoop()
 {
+	/* find printer by escpr-lib, do noting here, jump to use usb backend */
+/*
     //debug_msg("Start call Function EPSCommunicator::internalRunFindPrinterLoop \n");
     //m_searchAttr.timeout = timeout;
     m_searchAttr.retState = EPS_ERR_NONE;
@@ -329,6 +333,7 @@ void EPSCommunicator::internalRunFindPrinterLoop()
         //sleep(15);
     }
     //debug_msg("Exit call Function EPSCommunicator::internalRunFindPrinterLoop \n");
+*/
 }
 /*
 EThreadReturnValue EPSCommunicator::RunFindPrinterThread(void *object, EThreadParam param)
@@ -364,7 +369,7 @@ void EPSCommunicator::StartFindPrinter()
 		m_printerList.push_back(printer);
 
     }else{
-//		printf("No USB printer\n");
+		printf("No USB printer\n");
 	}
 /* --------------------------------------------------------------------------------*/
 
@@ -435,11 +440,13 @@ bool EPSCommunicator::ConnectToPrinter(const QString &printerName, const QString
                 break;
             }
         }
-        code = epsSetPrinter(&m_currentPrinter);
-        qDebug()<<"epcomSetPrinter code: "<<code;
+		/* todo: no use escpr-lib api here */
+        //code = epsSetPrinter(&m_currentPrinter);
+        //qDebug()<<"epcomSetPrinter code: "<<code;
     }
 
-    return (code == EPS_ERR_NONE);
+    //return (code == EPS_ERR_NONE);
+    return true;
 }
 
 bool EPSCommunicator::GetPrinterStatus(EPS_STATUS* status)
@@ -506,38 +513,7 @@ bool EPSCommunicator::GetCurrentPrinterStatus(EPS_STATUS* status, EPS_INK_INFO* 
 
 			return true;
 		}else{
+			qDebug()<<"can't get current status for usb backend.";
 			return false;
 		}
-
-	}else{
-
-		retState = epsGetStatus(status);
-
-		Sleep(1);   
-	
-		if(retState == EPS_ERR_NONE){
-		    retState = epsGetInkInfo(inkInfo);
-
-#if 0   // TESTCODE
-
-		inkInfo->remaining[2] = 1;
-		inkInfo->remaining[3] = 0;
-#endif
-
-		}else
-		{
-		    qDebug()<<"Can not get Status of printer err: "<<retState;
-		    return false;
-		}
-
-	}
-
-    if(retState == EPS_ERR_NONE)
-    {
-        return true;
-    }else{
-        qDebug()<<"Get Inkinfo of prrinter err: "<<retState;
-    }
-
-    return false;
 }
